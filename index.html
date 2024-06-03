@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Article</title>
+        <meta name="description" content=" ">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />		
+</head>
+	
+<style>	
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+	
+/* Desktop 1440 Контент статьи */
+	
+body {
+background-color: #ffffff;
+font-family:  Roboto, sans-serif;
+font-weight: 400;
+font-size: 17px;
+font-style: normal;
+line-height: 26px;
+padding: 0;
+margin: 0;	
+}
+	
+a:link, a:visited {
+color: #0068FF;
+font-size: 17px;
+text-decoration: none;	
+}
+a:active, a:hover {
+text-decoration: none;
+color: #0068FF;
+}
+	
+.author_blog:link, .author_blog:visited, .author_blog:hover, .author_blog:active {
+	color: #000000; font-size: 13px; line-height: 15px}
+.author_blog:link b, .author_blog:visited b, .author_blog:hover b, .author_blog:active b {
+	font-size: 15px; display: block}	
+	
+	
+h3 {
+font-family: Roboto, sans-serif;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;	
+padding: 20px 0;
+margin: 0;
+max-width: 680px;	
+}	
+	
+/* Desktop 1440 Контент статьи */
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+position: relative;
+max-width: 992px;
+height: auto;
+margin: 0 auto;
+}
+
+article {
+width: 100%;
+margin: 24px 0 14px 0;	
+}	
+
+	.img_ill {
+		width: 100%;
+	}
+	.img_ill img {
+		width: 100%;
+		height: auto;
+	}	
+	
+		
+	
+article p {
+padding-bottom: 20px;
+margin: 0;
+max-width: 680px;
+}
+
+article .img_ill + p {font-size: 15px; line-height: 24px}	
+	
+article blockquote {
+border-left: 1px solid #000000;
+padding-left: 24px;
+font-family:  Roboto, serif;
+font-weight: 400;
+font-size: 17px;
+max-width: 680px;
+margin: 28px 0;	
+}
+	
+.aut_img {
+border-radius: 50px;
+float:left;
+display: block;
+width: 40px;
+height: 40px;
+margin-right: 20px;	
+}	
+
+ol { margin: 0;  padding:0 0 10px 25px; }
+li { padding:0 0 10px 10px;}	
+	
+	
+.author_blog {
+font-size: 13px;
+}
+	
+
+.clearfix:before,
+.clearfix:after {
+ content: "";
+ display: table;
+}
+.clearfix:after
+{
+ clear: both;	
+	}
+	
+.author_blog b {
+font-size: 15px;
+padding-top: 5px;	
+}	
+aside {
+font-size: 13px;
+width: 264px;
+height: auto;
+float: right;
+line-height: 20px;	
+}
+aside a:link, aside a:visited {
+font-size: 13px;
+}	
+
+.image_box_small {
+display: block;
+width: 264px;
+height: auto;
+margin: 5px 0;	
+}	
+
+.author_link {display: block;}
+	
+.link_other_article
+{
+max-width: 680px;
+height: auto;
+padding: 28px 32px;
+border: 1px solid rgba(0,0,0,0.15);	
+}
+	
+.link_other_article h4 {
+font-family: Roboto;
+font-size: 22px;
+font-weight: 700;
+line-height: 30px;
+max-width: 440px;	
+margin: 0;
+position: relative;
+margin-bottom: 16px;	
+}
+	
+.link_other_article h4:before {
+content: "";
+position: absolute;
+z-index: 1000;
+width: 110px;
+height: 52px;
+display: block;
+background-image: url(arrow.png);
+background-repeat: no-repeat;
+background-position: 0% 16%;
+right: -126px;
+bottom: 6px;  
+}
+	
+.link_other_article h4:after {
+content: "";
+position: absolute;
+z-index: 999;
+width: 147px;
+height: 1px;
+display: block;
+background-color: #cccccc;
+bottom:0;
+left:90px;	
+}
+	
+	
+.link_other_article div {
+border-top: 1px solid rgba(0,0,0,0.15);	
+height: auto;
+display: flex;
+flex-direction:row;
+justify-content:space-between;	
+gap: 0 16px;	
+padding: 8px 0;
+}
+.link_other_article div div {width: 100%;}	
+.link_other_article div div a {}
+	
+.link_other_article img {
+width: 90px;
+height: 48px;
+display: block;
+	
+}
+	
+/* tablet 768 Контент статьи */
+
+@media (max-width: 768px) { 	
+.container {max-width: 608px;}	
+.container_box {max-width: 100%;}
+.container_box article p {max-width: 608px; margin: 0 auto;}
+article {display: flex; flex-direction: column}	
+.asd {display: flex; flex-direction: column}
+aside {float:none; order: 2;width: 60%;padding: 0 0 16px 38px;}	
+}
+
+/* mobile 320 Контент статьи */	
+@media (max-width: 320px){
+.container {max-width: 320px; padding: 0 16px;}
+.container_box {max-width: 100%; padding:0;}
+.container_box article p {max-width: 288px;}
+aside {width: 80%; padding: 0 0 16px 16px;}
+h3 {font-size: 24px; line-height: 24px;}
+.link_other_article h4 {font-size: 19px; line-height: 28px;}
+.link_other_article {padding: 16px;}
+article blockquote {margin: 0}
+	article {margin: 0 0 14px 0}	
+.link_other_article img {display: none}
+.link_other_article h4:before {
+	width: 57px;
+    height: 52px;
+    right: -16px;
+    bottom: 32px;
+}
+.link_other_article h4:after {
+width: 126px;
+top: 26px;
+left: 76px;	
+}	
+}	
+
+	
+	
+</style>
+	
+<body>
+	<div class="container">
+	
+<article>
+	<h3>Как выбрать товар для&nbsp;входа</h3>
+	<p>Маркет очень быстро меняется. Буквально каждый квартал меняются условия работы и&nbsp;инструменты для продвижения. Рассказываем о&nbsp;тех, которые существуют на&nbsp;момент работы над&nbsp;статьей.</p>
+	<p>Интеграция с&nbsp;рекламной площадкой <span class="nobr">&laquo;Яндекс.Директ&raquo;</span>. Этот инструмент позволяет настраивать рекламу <span class="nobr">в&nbsp;Яндекс.Директе</span>: с&nbsp;ней карточка товара будет видна любому пользователю, кто ищет ваш товар через поиск.</p>
+	<p>Площадка компенсирует до&nbsp;100% затрат магазина на&nbsp;рекламу в&nbsp;<nobr>Яндекс.Директе</nobr> или 10% оборота на&nbsp;маркетплейсе, возвращает маркетплейс меньшую из&nbsp;сумм.</p>
+	<p>Деньги, которые площадка вернет продавцу в&nbsp;виде бонусов, можно использовать на&nbsp;рекламу снова. Вывести их на&nbsp;счет в&nbsp;виде живых денег нельзя.</p>
+</article>		
+	</div>
+	<div class="container container_box">
+<article>
+<div class="img_ill"><img src="15.jpg" /></div>
+<p>Редкий теплый день в&nbsp;Арктике. Обычно надо сидеть в балке&#769;, это крытая красная повозка позади меня. 
+В ней места немного, и&nbsp;у&nbsp;каждого своя работа. Бывает, страшно задеть чей-то проводок. А&nbsp;когда удается поработать на&nbsp;улице, можно расслабиться.
+<span class="author_link">Источник: Е.И.&nbsp;&mdash;&nbsp;Буковецкий, &laquo;Фотограф-любитель&raquo;</span>	
+</p>
+
+</article>		
+	</div>
+	<div class="container">
+<article>	
+	<p>И наоборот: если товар очень популярный, у&nbsp;него 3000-4000 продаж и&nbsp;больше 150&nbsp;отзывов, новичку будет сложно с&nbsp;ним конкурировать. 
+		Придется назначать цену ниже и&nbsp;много вкладывать в&nbsp;рекламу.</p>
+	<p><b>Поставщиком может стать:</b></p>
+	<ol>
+		<li>с&nbsp;высоким спросом;</li>
+		<li>у&nbsp;которых 50—100 отзывов;</li>
+		<li>у&nbsp;которых маржинальность выше 100%;</li>
+		<li>небольшого веса и&nbsp;объема, единого размера.</li>
+	</ol>
+</article>		
+
+<article>
+	<h3>Преимущества Wildberries</h3>
+	
+<p><b>Легко стать поставщиком.</b> Нужно зарегистрироваться на&nbsp;сайте для&nbsp;партнеров,
+заполнить анкету, подписать оферту и&nbsp;оформить карточку товара. После этого
+товар сразу попадает на&nbsp;витрину.</p>
+<div class="asd"><aside><a href="#">Wildberries&nbsp;&mdash; международный маркетплейс одежды, обуви, электроники, детских товаров, товаров для&nbsp;дома и&nbsp;других товаров.</a></aside>
+<p><b>Проработанная система доставки.</b> У&nbsp;Wildberries 13&nbsp;складов в&nbsp;разных регионах
+России, поставщик может выбрать тот, куда ему удобно отгружать товар.
+Московские компании могут хранить товар в&nbsp;Коледино, сибирские&nbsp;&mdash;
+в Новосибирске, уральские&nbsp;&mdash; в&nbsp;Екатеринбурге.</p></div>
+<p>У&nbsp;маркетплейса 115&nbsp;000&nbsp;пунктов выдачи и&nbsp;постаматов, более&nbsp;5000&nbsp;курьеров,
+	поэтому товар быстро доставят покупателю.</p>
+<p><b>Мощная реклама и&nbsp;большая аудитория.</b> Продавцу не&nbsp;нужно вкладывать деньги
+в&nbsp;продвижение площадки, Wildberries сам привлекает клиентов. Маркетплейс
+проводит рекламные кампании в&nbsp;СМИ и&nbsp;соцсетях, привлекает покупателей
+акциями и&nbsp;скидками. Благодаря этому на&nbsp;сайт Wildberries ежедневно заходят
+больше 11,5&nbsp;млн человек.</p>	
+</article>
+		
+<article>		
+<div class="link_other_article">
+	<h4>Читайте личный опыт предпринимателей</h4>
+	<div><a href="#" target="_blank">Как управлять пространством ювелирного магазина, чтобы продажи росли</a><img src="l1.jpg" /></div>
+	<div><a href="#" target="_blank">Как внедрить искусственный интеллект в&nbsp;работу с&nbsp;документами и&nbsp;не&nbsp;разочароваться</a><img src="l2.jpg" /></div>
+	<div><a href="#" target="_blank">Как правильно применять технологии в&nbsp;консалтинге?</a><img src="l3.jpg" /></div>
+	<div><a href="#" target="_blank">Как сохранить бизнес в&nbsp;период неопределенности</a><img src="l4.png" /></div>
+	<div><a href="#" target="_blank">Как мы пережили 5&nbsp;экономических кризисов за&nbsp;последние 30&nbsp;лет в&nbsp;России</a></div>
+</div>		
+</article>
+		
+		
+<article>		
+<h3>На&nbsp;запах кухни приходят медведи, а&nbsp;песцы разворовывают запасы еды</h3>
+
+<p>Мы помогаем МГУ организовывать практику и&nbsp;вывозим студентов изучать
+мерзлоту. Ребята, которые приехали учиться из&nbsp;центральных или из&nbsp;южных
+регионов, только теоретически могут представить себе, что это такое.<br>
+	Но они не&nbsp;почувствуют, что значит холод и&nbsp;пурга, пока сами не&nbsp;увидят их.</p>
+	
+<div class="asd">
+<aside><a href="#" target="_blank"><div class="image_box_small"><img src="pic_2.jpg" /></div>«Обманулась, но&nbsp;смогла выбрать фабрику»: вторая серия реалитишоу</a></aside>
+<p>В организацию практики студентов мы вкладываем до&nbsp;10% от&nbsp;оборота. Сами 
+на&nbsp;этом не&nbsp;зарабатываем, просто радуемся, что можем показать им&nbsp;настоящую
+	работу.</p>
+<p>У студентов есть два варианта практики&nbsp;&mdash; производственная и&nbsp;учебная.<br>
+На производственной практике&nbsp;&mdash; работа с&nbsp;настоящим заказом. Например, есть
+задание&nbsp;&mdash; отбирать образцы грунта, упаковывать их, делать этикетки.<br>
+	За&nbsp;выполнение студент получает оплату.</p>
+</div>
+	
+<p>А учебная практика проходит так: сначала студенты приезжают на&nbsp;участок работ,
+который им заранее &laquo;подготовили&raquo; преподаватели, все осматривают. Потом
+получают приборы, чтобы делать замеры, и&nbsp;в&nbsp;конце дня составляют свою карту.<br>
+На&nbsp;карте нужно указать, где, по&nbsp;их мнению, льды, где&nbsp;мерзлые и&nbsp;талые породы,<br>
+где&nbsp;пески или&nbsp;глины. По&nbsp;итогам практики эту&nbsp;карту нужно будет защитить перед&nbsp;преподавателями.</p>		
+</article>
+
+<article>
+<blockquote>
+<p>&laquo;Я&nbsp;фотографирую все изделия сам. Не&nbsp;пользуюсь услугами предметного
+фотографа. Фотографировать шелк сложно: надо передать текстуру и&nbsp;блики
+света. Обычно конкуренты снимают шелковые изделия на&nbsp;девушках&nbsp;&mdash;
+так проще показать товар. Но&nbsp;мне кажется, что люди и&nbsp;посторонние предметы
+в&nbsp;кадре отвлекают от&nbsp;товара. Поэтому предпочитаю снимать изделия на&nbsp;белом
+ фоне без&nbsp;лишних деталей.</p>
+
+<p>Несомненно, на&nbsp;модели проще показать, как использовать товар.
+Но&nbsp;мы планируем выкладывать видео по&nbsp;использованию наших изделий.
+Например, как&nbsp;правильно надевать чалму на&nbsp;голову. Так мы&nbsp;не&nbsp;отойдем
+от&nbsp;концепции фотографий и&nbsp;поможем покупателю пользоваться товаром
+ правильно&raquo;.</p>
+
+<a href="#" class="author_blog clearfix">
+<div class="aut_img"><img src="avatar.jpg" /></div>	
+<div><b>Кирилл Пургин</b>Основатель бренда</div>
+</a>
+	
+</blockquote>
+</article>		
+
+<article>
+<p>Часть наших сотрудников преподают в&nbsp;МГУ. Лекции можем вести прямо из&nbsp;экспедиции, обычно из&nbsp;рубки нашего судна. Если один из&nbsp;нас занят, 
+его&nbsp;подменят. Например, сейчас моя&nbsp;очередь работать на льду, я&nbsp;выхожу на смену, а&nbsp;мои лекции читает наш главный геолог, Алексей Гунар.</p>
+<p>В районах, где&nbsp;есть интернет, общаемся со&nbsp;студентами по&nbsp;Zoom. Но, конечно, это не&nbsp;везде возможно, поэтому в&nbsp;следующих поездках планируем работать со&nbsp;спутниковой связью VSAT. 
+Обещают стабильную работу.</p>
+</article>		
+		
+		
+</div>	
+</body>
+
+</html>
